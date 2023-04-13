@@ -17,7 +17,7 @@ const containerVariant = {
   },
 };
 
-const nextVariant = {
+const buttonVariant = {
   hover: {
     originX: 0,
     scale: 1.3,
@@ -25,6 +25,11 @@ const nextVariant = {
     type: "spring",
     stiffness: 300,
   },
+};
+
+const nextVariant = {
+  initial: { x: "-100vw" },
+  final: { x: 0, transition: { type: "spring", stiffness: 120 } },
 };
 
 const Base = ({ addBase, pizza }) => {
@@ -44,7 +49,7 @@ const Base = ({ addBase, pizza }) => {
           let spanClass = pizza && pizza.base === base ? "active" : "";
           return (
             <motion.li
-              variants={nextVariant}
+              variants={buttonVariant}
               whileHover="hover"
               key={base}
               onClick={() => addBase(base)}
@@ -56,12 +61,7 @@ const Base = ({ addBase, pizza }) => {
       </ul>
 
       {pizza && pizza.base && (
-        <motion.div
-          className="next"
-          initial={{ x: "-100vw" }}
-          animate={{ x: 0 }}
-          transition={{ type: "spring", stiffness: 120 }}
-        >
+        <motion.div variants={nextVariant} className="next" initial="initial" animate="final">
           <motion.button
             whileHover={{
               scale: 1.1,
