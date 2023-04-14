@@ -17,13 +17,24 @@ const containerVariant = {
   },
 };
 
-const buttonVariant = {
+const buttonVariants = {
   hover: {
     originX: 0,
     scale: 1.3,
     color: "#f8e112",
     type: "spring",
     stiffness: 300,
+  },
+
+  whilehover: {
+    scale: 1.1,
+    textShadow: "0px 0px 8px rgb(255,255,255)",
+    boxShadow: "0px 0px 8px rgb(255,255,255)",
+    transition: {
+      duration: 0.3,
+      repeatType: "mirror",
+      repeat: Infinity,
+    },
   },
 };
 
@@ -49,7 +60,7 @@ const Base = ({ addBase, pizza }) => {
           let spanClass = pizza && pizza.base === base ? "active" : "";
           return (
             <motion.li
-              variants={buttonVariant}
+              variants={buttonVariants}
               whileHover="hover"
               key={base}
               onClick={() => addBase(base)}
@@ -63,11 +74,8 @@ const Base = ({ addBase, pizza }) => {
       {pizza && pizza.base && (
         <motion.div variants={nextVariant} className="next" initial="initial" animate="final">
           <motion.button
-            whileHover={{
-              scale: 1.1,
-              textShadow: "0px 0px 8px rgb(255,255,255)",
-              boxShadow: "0px 0px 8px rgb(255,255,255)",
-            }}
+            variants={buttonVariants}
+            whileHover="whilehover"
             onClick={() => navigate("/toppings")}
           >
             Next
