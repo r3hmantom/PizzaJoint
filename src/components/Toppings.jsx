@@ -26,6 +26,10 @@ const buttonVariants = {
       repeat: Infinity,
     },
   },
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
+  },
 };
 
 const Toppings = ({ addTopping, pizza }) => {
@@ -36,6 +40,7 @@ const Toppings = ({ addTopping, pizza }) => {
       variants={containerVariant}
       initial="initial"
       animate="final"
+      exit="exit"
       className="toppings container"
     >
       <h3>Step 2: Choose Toppings</h3>
