@@ -28,7 +28,9 @@ function App() {
   return (
     <div>
       <Header />
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
+        {" "}
+        // wait for the exit animation to finish before rendering the next component
         <Routes location={location} key={location.key}>
           <Route path="/" element={<Home />} />
           <Route path="/base" element={<Base addBase={addBase} pizza={pizza} />} />
