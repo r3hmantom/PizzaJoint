@@ -14,6 +14,10 @@ const containerVariant = {
       delay: 0.5,
     },
   },
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
+  },
 };
 const buttonVariants = {
   hover: {
@@ -25,10 +29,6 @@ const buttonVariants = {
       repeatType: "mirror",
       repeat: Infinity,
     },
-  },
-  exit: {
-    x: "-100vw",
-    transition: { ease: "easeInOut" },
   },
 };
 
