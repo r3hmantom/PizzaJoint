@@ -32,9 +32,6 @@ const childVariants = {
   },
 };
 const Order = ({ pizza }) => {
-  setTimeout(() => {
-    setShowTitle(false);
-  }, 4000);
   return (
     <motion.div
       variants={containerVariant}
