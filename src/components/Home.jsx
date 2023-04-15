@@ -21,8 +21,12 @@ const containerVariants = {
     opacity: 1,
     transition: {
       delay: 1.5,
-      duration1,
+      duration: 1.5,
     },
+  },
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
   },
 };
 
@@ -33,6 +37,7 @@ const Home = () => {
       className="home container"
       initial="initial"
       animate="animate"
+      exit="exit"
     >
       <h2>Welcome to Pizza Joint</h2>
       <Link to="/base">
