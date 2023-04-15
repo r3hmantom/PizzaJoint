@@ -26,6 +26,10 @@ const childVariants = {
   final: {
     opacity: 1,
   },
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
+  },
 };
 const Order = ({ pizza }) => {
   setTimeout(() => {
@@ -36,6 +40,7 @@ const Order = ({ pizza }) => {
       variants={containerVariant}
       initial="initial"
       animate="final"
+      exit="exit"
       className="container order"
     >
       <h2 exit={{ y: -1000 }}>Thank you for your order :)</h2>
