@@ -7,7 +7,7 @@ const loaderVariants = {
     y: [0, -30],
     transition: {
       x: { repeatType: "mirror", repeat: Infinity, duration: 0.5 },
-      y: { repeatType: "mirror", repeat: Infinity, duration: 0.25 },
+      y: { repeatType: "mirror", repeat: Infinity, duration: 0.25, ease: "easeOut" },
     },
   },
 };
