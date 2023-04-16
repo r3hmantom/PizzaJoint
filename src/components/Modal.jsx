@@ -16,12 +16,14 @@ function Modal({ showModal, setShowModal }) {
   return (
     <AnimatePresence mode="wait">
       {showModal && (
-        <motion.div
-          variants={backdrop}
-          className="backdrop"
-          initial="initial"
-          animate="final"
-        ></motion.div>
+        <motion.div variants={backdrop} className="backdrop" initial="initial" animate="final">
+          <motion.div className="modal">
+            <p>Want to make another pizza?</p>
+            <Link to="/">
+              <button>Start Again</button>
+            </Link>
+          </motion.div>
+        </motion.div>
       )}
     </AnimatePresence>
   );
