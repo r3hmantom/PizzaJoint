@@ -38,7 +38,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/base" element={<Base addBase={addBase} pizza={pizza} />} />
           <Route path="/toppings" element={<Toppings addTopping={addTopping} pizza={pizza} />} />
-          <Route path="/order*" element={<Order pizza={pizza} />} />
+          <Route path="/order*" element={<Order setShowModal={setShowModal} pizza={pizza} />} />
         </Routes>
       </AnimatePresence>
     </div>
