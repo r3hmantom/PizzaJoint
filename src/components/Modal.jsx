@@ -12,7 +12,7 @@ const backdrop = {
   },
 };
 
-function Modal({ showModal }) {
+function Modal({ showModal, setShowModal }) {
   return (
     <AnimatePresence mode="wait">
       {showModal && (

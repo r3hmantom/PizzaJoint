@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Base from "./components/Base";
 import Toppings from "./components/Toppings";
 import Order from "./components/Order";
+import Modal from "./components/Modal";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Modal showModal={showModal} setShowModal={setShowModal} />
       <AnimatePresence mode="wait">
         {" "}
         // wait for the exit animation to finish before rendering the next component
