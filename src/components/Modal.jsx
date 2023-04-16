@@ -22,7 +22,7 @@ function Modal({ showModal, setShowModal }) {
     <AnimatePresence mode="wait">
       {showModal && (
         <motion.div
-          exit="final"
+          exit="initial"
           variants={backdrop}
           className="backdrop"
           initial="initial"
