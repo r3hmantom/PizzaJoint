@@ -31,7 +31,7 @@ function App() {
     <div>
       <Header />
       <Modal showModal={showModal} setShowModal={setShowModal} />
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" onExitComplete={() => setShowModal(false)}>
         {" "}
         // wait for the exit animation to finish before rendering the next component
         <Routes location={location} key={location.key}>
