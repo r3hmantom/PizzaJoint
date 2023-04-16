@@ -21,7 +21,13 @@ function Modal({ showModal, setShowModal }) {
   return (
     <AnimatePresence mode="wait">
       {showModal && (
-        <motion.div variants={backdrop} className="backdrop" initial="initial" animate="final">
+        <motion.div
+          exit="final"
+          variants={backdrop}
+          className="backdrop"
+          initial="initial"
+          animate="final"
+        >
           <motion.div className="modal" variants={modal}>
             <p>Want to make another pizza?</p>
             <Link to="/">
