@@ -12,12 +12,17 @@ const backdrop = {
   },
 };
 
+const modal = {
+  initial: { y: "-100vh", opacity: 0 },
+  final: { y: 200, opacity: 1, transition: { delay: 0.5 } },
+};
+
 function Modal({ showModal, setShowModal }) {
   return (
     <AnimatePresence mode="wait">
       {showModal && (
         <motion.div variants={backdrop} className="backdrop" initial="initial" animate="final">
-          <motion.div className="modal">
+          <motion.div className="modal" variants={modal}>
             <p>Want to make another pizza?</p>
             <Link to="/">
               <button>Start Again</button>
