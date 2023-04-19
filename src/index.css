@@ -23,6 +23,7 @@ div {
   letter-spacing: 2px;
   list-style-type: none;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   background: rgb(100, 0, 123);
