@@ -1,40 +1,51 @@
-# PizzaJoint
+# Pizza Joint
 
-PizzaJoint is a web application that demonstrates the use of Framer Motion to create smooth and engaging animations. This application allows you to order your favorite pizza from the comfort of your own home. 
+This is a fictional pizza making app created using React and Framer Motion. The app allows users to customize their pizza orders and place them online.
 
-## Features
-- Page animations
-- Dragging functionality
-- Custom loaders
+## Demo
 
-## Technologies
-- Framer Motion
-- ReactJS
-- JavaScript
-- HTML
-- CSS
+You can see a live demo of the app at [https://r3-pizzajoint.netlify.app/](https://r3-pizzajoint.netlify.app/).
 
-## Live Demo
-To view the live demo, please visit [https://r3-pizzajoint.netlify.app/](https://r3-pizzajoint.netlify.app/).
+## Getting Started
 
-## Installation
-1. Clone the repository.
-```git clone https://github.com/r3hmantom/PizzaJoint.git ```
+To run this project on your local machine, follow these steps:
 
-2. Install the dependencies.
-```npm install```
+1. Clone this repository by running the following command in your terminal:
 
-3. Start the development server.
-```npm start```
+```
+git clone https://github.com/r3hmantom/PizzaJoint.git
+```
 
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Navigate to the project directory:
 
-## Resources
-- Framer Motion documentation: [https://www.framer.com/api/motion/](https://www.framer.com/api/motion/)
-- React documentation: [https://react.dev/learn](https://react.dev/learn)
+```
+cd PizzaJoint
+```
 
-## Author
-- [Abdul Rehman](https://github.com/r3hmantom)
+3. Install the dependencies:
 
-Feel free to contribute and suggest new features for the application. Happy coding!
+```
+npm install
+```
 
+4. Start the development server:
+
+```
+npm run dev
+```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
+
+## Built With
+
+* [React](https://reactjs.org/)
+* [Framer Motion](https://www.framer.com/motion/)
+
+## Authors
+
+* Abdul Rehman - [@r3hmantom](https://github.com/r3hmantom)
+* Email: r3hmantom@gmail.com
+
+## Acknowledgements
+
+* This pizza app was designed by [Mosh Hamedani](https://codewithmosh.com)
