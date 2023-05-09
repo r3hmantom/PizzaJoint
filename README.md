@@ -6,6 +6,8 @@ This is a fictional pizza making app created using React and Framer Motion. The 
 
 You can see a live demo of the app at [https://r3-pizzajoint.netlify.app/](https://r3-pizzajoint.netlify.app/).
 
+![image](https://user-images.githubusercontent.com/96996019/236997804-162e78e6-8ad2-47bd-9ec6-50b6253518c1.png)
+
 ## Getting Started
 
 To run this project on your local machine, follow these steps:
